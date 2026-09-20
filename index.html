@@ -7,6 +7,117 @@ h1[tabindex="-1"]:focus,.feedback h3[tabindex="-1"]:focus{outline:none}
 
 footer .signature{display:inline-block;margin-top:8px;font-size:14px;color:var(--ink)}
 
+/* Relief et contrastes inspirés du Bureau mystère. */
+:root{
+  --ink:#2c2a4a;
+  --muted:#504c65;
+  --line:#bdb6cd;
+  --paper:#fffbf2;
+  --purple:#5140bd;
+  --lime:#ffcf58;
+  --frame:#2c2a4a;
+  --shadow:5px 6px 0 var(--frame);
+}
+body{line-height:1.6}
+header{background:var(--ink);border-bottom:3px solid #ffb627;color:#fff}
+.brand{color:#fff}
+.logo{background:#ffb627;color:var(--ink);border:2px solid #fff}
+.school{color:#fff}
+h1,h2,.brand,.btn{font-family:'Trebuchet MS','Segoe UI',Arial,sans-serif}
+.intro{font-size:17px;color:var(--muted)}
+.purple{--accent:#4936b3;--tint:#ece7ff}
+.blue{--accent:#085982;--tint:#e0efff}
+.orange{--accent:#8d3a12;--tint:#fff1d0}
+.green{--accent:#166548;--tint:#dcf7f1}
+.missions{gap:24px}
+.mission,.side,.play-card,.summary{
+  border:2px solid var(--frame);
+  box-shadow:var(--shadow);
+}
+.mission{padding:0;overflow:hidden;min-height:270px}
+.mission-top{padding:20px 22px 18px;background:var(--tint);border-bottom:2px solid var(--frame)}
+.iconbox{height:52px;width:52px;background:#fff;border:1.5px solid var(--accent);font-size:22px}
+.number{color:#fff;background:var(--ink);padding:5px 9px;border-radius:7px;font-size:13px;font-weight:800}
+.card-status{font-size:14px;color:var(--accent);font-weight:700;margin-top:12px}
+.mission h2{margin:20px 22px 8px;font-size:22px}
+.mission p{margin:0 22px 22px;color:var(--muted);font-size:16px}
+.card-action{width:calc(100% - 44px);margin:auto 22px 22px;font-size:16px}
+.mission:hover{transform:translate(-2px,-2px);box-shadow:7px 8px 0 var(--frame)}
+.mission:active{transform:translate(3px,3px);box-shadow:2px 3px 0 var(--frame)}
+.side{background:#eceaff;color:var(--ink)}
+.side p,.side small{color:var(--muted);font-size:16px}
+.tag{color:#ffcf58;background:var(--ink);font-size:13px}
+.orb{background:#fff;border:8px solid #b7a9e1;color:var(--ink)}
+.divider{background:#b9afcc}
+.btn{
+  background:#ffb627;color:var(--ink);border:2px solid var(--frame);
+  box-shadow:3px 4px 0 var(--frame);
+  transition:transform .15s,box-shadow .15s;
+}
+.btn-soft{background:#fff}
+.btn-lime{background:#ffcf58;color:var(--ink)}
+.btn:hover:not(:disabled){transform:translate(-1px,-1px);box-shadow:4px 5px 0 var(--frame)}
+.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:1px 2px 0 var(--frame)}
+.bottom-note{padding:18px 21px;background:#fff;border:2px solid var(--frame);border-radius:15px;box-shadow:3px 4px 0 var(--frame);font-size:15px;margin-top:30px}
+.progress-track{height:11px;border:1.5px solid var(--frame);background:#e0d9f0}
+.coach{padding:22px;background:#fff;border:2px solid var(--frame);border-radius:20px;box-shadow:3px 4px 0 var(--frame)}
+.coach .eyebrow{font-size:13px;color:var(--purple)}
+.coach p{font-size:16px}
+.pill{border:1px solid var(--accent);font-size:14px}
+.context{background:#fff5dd;border:1px solid #b79444;border-left:5px solid #a16b00}
+.option{border:2px solid #9e96b1;box-shadow:0 2px 0 #d6cee1;line-height:1.55}
+.option:hover{border-color:var(--purple);background:#f7f4ff}
+.option .letter{background:#e9e5f1;color:var(--ink)}
+.option:has(input:checked){background:#eae4ff;border-color:var(--purple);box-shadow:0 2px 0 var(--purple)}
+.option.is-correct,.option.is-correct:has(input:checked){border-color:#176b45;background:#e1f6e9;box-shadow:0 2px 0 #176b45}
+.option.is-correct .letter,.option.is-correct:has(input:checked) .letter{background:#176b45;color:#fff}
+.option.is-wrong,.option.is-wrong:has(input:checked){border-color:#a04318;background:#fff0e3;box-shadow:0 2px 0 #a04318}
+.option.is-wrong .letter,.option.is-wrong:has(input:checked) .letter{background:#a04318;color:#fff}
+.option.is-wrong::after{content:'×';margin-left:auto;font-size:23px;line-height:1;font-weight:800;color:#a04318}
+.feedback{border:2px solid #23774d;background:#e6f7ec;box-shadow:3px 4px 0 #23774d}
+.feedback.learning{border:2px solid #99501c;background:#fff1dc;box-shadow:3px 4px 0 #99501c}
+.explorer{border:2px solid var(--frame);box-shadow:3px 4px 0 #c1b9d4}
+.explorer-bar{background:#eae4fa;color:var(--ink);border-bottom:1px solid #a89cbd;font-weight:650}
+.window-dots{color:#6e6389}
+.file{border-color:#c6bfd2;margin-bottom:6px}
+.file:last-child{margin-bottom:0}
+.file:hover,.file.selected{border-color:var(--purple);background:#eae4ff}
+.file-icon{color:var(--purple)}
+.number-wrap input,.match-row select,.token{border:2px solid #8f849f;background:#fff}
+.number-wrap input::placeholder{color:#625770}
+.match-arrow{color:#665a7b}
+.token{box-shadow:2px 3px 0 #c1b9d4}
+.ordered li button{border:2px solid var(--purple);background:#ece7ff}
+.empty-order{border-color:#8f849f;background:#faf8ff}
+.score-circle{border-color:#d6cbf0;border-top-color:var(--purple);border-right-color:var(--purple)}
+.score-circle strong span{color:#665a7b}
+dialog{border:2px solid var(--frame);box-shadow:7px 8px 0 var(--frame),0 24px 70px #17152d55}
+.memo-tabs button{border:1.5px solid #8f849f;color:var(--ink);font-size:15px}
+.memo-tabs button.active{color:#fff;border-color:var(--frame);box-shadow:2px 3px 0 var(--frame)}
+.memo-sheet{background:#fff7e4;border:1.5px solid #b89b5c}
+.memo-sheet h4{color:#443283}
+.close{background:#fff1d0;border:1.5px solid var(--frame)}
+button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #174fb3;outline-offset:4px}
+.option:has(input:focus-visible){outline:3px solid #174fb3;outline-offset:4px}
+footer{margin-top:14px;border-top:2px solid #d9caab;color:var(--muted)}
+@media(max-width:600px){
+  :root{--shadow:3px 4px 0 var(--frame)}
+  .mission:hover{transform:none;box-shadow:var(--shadow)}
+  .mission:active{transform:translate(1px,1px);box-shadow:2px 3px 0 var(--frame)}
+  .mission-top{padding:18px 20px}
+  .mission h2{margin-left:20px;margin-right:20px}
+  .mission p{margin-left:20px;margin-right:20px}
+  .card-action{width:calc(100% - 40px);margin-left:20px;margin-right:20px}
+  .card-status{font-size:14px}
+  .bottom-note{padding:16px;font-size:14px}
+  dialog{box-shadow:3px 4px 0 var(--frame),0 18px 50px #17152d55}
+}
+@media(prefers-reduced-motion:reduce){.mission:hover,.mission:active,.btn:hover:not(:disabled),.btn:active:not(:disabled){transform:none}}
+@media print{
+  dialog[open]{border:0;box-shadow:none}
+  .memo-sheet{border:0;background:#fff}
+}
+
 </style></head><body><a class="skip-link" href="#app">Aller aux activités</a>
 <header><div class="brand"><span class="logo" aria-hidden="true">▰</span> Mission données<span style="color:#aaa5c4">.</span></div><span class="school">TECHNOLOGIE · 5ème</span></header>
 <main class="wrap" id="app"><div class="eyebrow">Séquence 02 · À toi de jouer</div><h1>Prends le contrôle de tes fichiers.</h1><p class="intro">4 missions pour réviser. Explore, essaie, comprends… et progresse à ton rythme.</p><div class="home-grid"><section class="missions" aria-label="Choisir une mission">
